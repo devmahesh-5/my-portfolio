@@ -8,6 +8,7 @@
 html {
     font-size: 62.5%;
     background-color: var(--white);
+    scroll-behavior: smooth;
 }
 body{
     height: 500vh;
@@ -39,7 +40,7 @@ a {
     background-color: var(--primary-shades);
     /* background-color: whitesmoke; */
     opacity: 0.9;
-    box-shadow: 0 0.2rem whitesmoke;
+    box-shadow: 0 0.2rem rgb(184, 184, 184) 0.6;
 }
 #logo {
     height: 5rem;
@@ -58,11 +59,8 @@ a {
     gap: 32px;
     justify-content: space-between;
     font-size: 1.5rem;
-}
-
-li {
+    color: var(--white);
     list-style: none;
-    text-decoration: none;
 }
 
 .list .button {
@@ -83,7 +81,8 @@ li {
 .mobile {
     display: none;
     font-size: 3.3rem;
-    color: var(--helper-color);
+    color: rgb(180, 179, 179);
+    cursor: pointer;
 }
 
 #cross[name="close"] {
@@ -114,7 +113,7 @@ li {
     position: absolute;
     margin: 9.6rem 0;
    transform: translateX(100%);
-   
+   transition: transform 0.5s ease-in-out;
    display: none;
 }
     .navigation .list{
@@ -127,7 +126,8 @@ li {
       .active .navigation{
          display: block; 
         transform: translateX(0%);
-       
+        transition: transform 1s ease-in-out;
+      
     }
     .active .mobile #bar[name="menu"]{
         display: none;
@@ -135,7 +135,6 @@ li {
     .active .mobile #cross[name="close"]{
         display: block;
         z-index: 999;
-        
     }
 
 }
