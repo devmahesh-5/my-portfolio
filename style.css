@@ -103,7 +103,7 @@ a {
    .navigation{
     top: 0px;
     left: 0px;
-    height: 50vh;
+    height: 45vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
