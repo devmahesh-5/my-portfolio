@@ -36,7 +36,11 @@ a {
     background-color: whitesmoke;
     opacity: 0.9;
 }
-
+img{
+    height: 5rem;
+    border-radius: 100%;
+    opacity: 0.9; 
+}
 .logo {
     font-size: 2.2rem;
     font-weight: bold;
@@ -100,6 +104,7 @@ li {
     position: absolute;
     margin: 9.6rem 0;
    transform: translateX(100%);
+   
    display: none;
 }
     .navigation .list{
@@ -108,12 +113,11 @@ li {
         justify-content: center;
         align-items: center;
         color: var(--white);
-          
       }
       .active .navigation{
          display: block; 
         transform: translateX(0%);
-        transition: all 1s ease-in-out;
+       
     }
     .active .mobile #bar[name="menu"]{
         display: none;
@@ -121,6 +125,7 @@ li {
     .active .mobile #cross[name="close"]{
         display: block;
         z-index: 999;
+        
     }
 
 }
