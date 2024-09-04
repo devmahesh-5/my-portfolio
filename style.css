@@ -116,6 +116,7 @@ img {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .home {
@@ -337,7 +338,7 @@ footer{
 
     .home img{
         margin: auto;
-        max-height: 150vh;
+        max-height: 100vh;
     }
     @media (max-width: 560px){
         .home {
@@ -349,7 +350,11 @@ footer{
             overflow: none;
         }
         .home img{
+            max-height: 100vh;
             width: 100vw;
+        }
+        .content{
+            overflow: hidden;
         }
         .contact{
             height: 60vh;
@@ -382,6 +387,9 @@ footer{
     cursor: pointer; */
 }
     }
+    .projects{
+        height: 140vh;
+       }
    
 }
 @media (max-width:500px) {
@@ -393,4 +401,16 @@ footer{
         grid-template-rows: 50vh 50vh;
         overflow: none;
     }
+    .home img{
+        max-height: 50vh;
+    }
+    .skill-bar {
+        background-color: #ddd;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 10px;
+      }
+      .projects{
+       height: 140vh;
+      }
 }
