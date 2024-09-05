@@ -41,25 +41,9 @@ main {
     width: 100px;
     position: fixed;
     color: var(--white);
-    text-align: center;
-   
+    text-align: center; 
 }
-/* .chaticon:hover{
-    /
-} */
-/* .chaticon img{
-    height: 100px;
-    width: 100px;
-}
-.chaticon figcaption{
-    visibility: hidden;
-    transition: visibility 0.5 ease;
-}
-.chats figcaption{
-    visibility: visible;
-    transition: visibility 0.5 ease;
 
-} */
 a {
     text-decoration: none;
     color: var(--para-color);
