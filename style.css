@@ -215,6 +215,10 @@ img {
     gap: 2.3rem;
     box-sizing: border-box;
 }
+.projects h3{
+    color: #D4AF37;
+    font-size: 1.8rem;
+}
 section {
     padding: 1rem;
     box-sizing: border-box;
