@@ -63,6 +63,8 @@ a {
     box-shadow: 0 0.2rem rgb(184, 184, 184) 0.6;
 }
 .logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
     display: flex;
     align-items: center;
     background-color: var(--white);
@@ -88,7 +90,7 @@ a {
 
 .logo-text {
     font-size: 1.8rem;
-    color: #333;
+    color: var(--primary-shades);
     font-weight: bold;
 }
 
@@ -169,7 +171,7 @@ img {
     padding: 5.4rem 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
 }
 .content .intro .welcome,.cvsection{
     justify-content: center;
@@ -180,16 +182,15 @@ img {
 .content .intro{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
-    grid-template-rows: 4.6rem ;
+    grid-template-rows: auto;
     gap: 1.4rem;
 }
 .studiesandall{
     box-sizing: border-box;
-    overflow: hidden;
-    word-wrap: break-word; 
     font-size: 1.6rem;
     color: var(--white);
     justify-content: center;
+    padding: 0 1.2rem;
 }
 .depth{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -232,7 +233,7 @@ section {
                 -0.8rem -0.8rem 1.2rem rgba(255, 255, 255, 0.05);
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 6% 94%;
+                grid-template-rows: auto 1fr;;
 }
 section .source{
     width: 100%;
@@ -367,6 +368,22 @@ footer{
     padding: 1.2rem;
     /* text-align: center; */
 }
+@media(max-width:30000px){
+    html{
+        font-size: 90.2%;
+    }
+}
+@media(max-width:25000px){
+    html{
+        font-size: 80.2%;
+    }
+}
+@media(max-width:12000px){
+    html{
+        font-size: 68.2%;
+    }
+}
+
 @media (max-width:1024px) {
     html{
         font-size: 56%;
@@ -465,6 +482,9 @@ footer{
     }
 }
 @media (max-width:760px){
+    .depth{
+        padding: 2rem;
+    }
     .projects{
         display: flex;
         flex-direction: column;
@@ -527,6 +547,13 @@ footer{
 .list ul li{
     padding: 0.6rem;
 }
+.attachment a {
+    font-size: 2.8rem;
+}
+
+.attachment a i {
+    font-size: 2.8rem; 
+}
     }
 
 @media (max-width:500px) {
@@ -556,5 +583,12 @@ footer{
         overflow: hidden;
         height: 10px;
       }
+      .attachment a {
+        font-size: 2.2rem;
+    }
+    
+    .attachment a i {
+        font-size: 2.2rem; 
+}
       
 }
