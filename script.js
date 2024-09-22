@@ -25,3 +25,9 @@ let interval=setInterval(() => {
     }
    
 }, 30);
+document.querySelector("main").addEventListener("click",()=>{
+    if(header.classList.contains("active")){
+        header.classList.remove("active");
+        main.classList.remove("down");
+    }
+})
