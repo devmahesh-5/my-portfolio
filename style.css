@@ -256,7 +256,9 @@ h3{
     color: var(--white);
   }
   
-  #skills h2 {
+  #skills h2,.projecthead{
+    color: var(--white);    
+    text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
   }
